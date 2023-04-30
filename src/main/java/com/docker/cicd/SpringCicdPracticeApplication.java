@@ -18,6 +18,10 @@ public class SpringCicdPracticeApplication {
     public ResponseEntity<?> welcome() {
         return ok("Welcome to CI/CD");
     }
+    @GetMapping(path = "/say",produces = APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> show(){
+        return ok("Hello Manikandan welcome to CI/CD");
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(SpringCicdPracticeApplication.class, args);
