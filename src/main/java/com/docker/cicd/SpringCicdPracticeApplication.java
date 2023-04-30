@@ -20,7 +20,7 @@ public class SpringCicdPracticeApplication {
     }
     @GetMapping(path = "/say",produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<?> show(){
-        return ok("Hello Manikandan welcome to CI/CD");
+        return ok("Hello Manikandan R welcome to CI/CD");
     }
 
     public static void main(String[] args) {
